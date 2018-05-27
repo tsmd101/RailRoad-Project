@@ -1003,25 +1003,3 @@ END;
 
 
 
-INSERT INTO passengers(passenger_lname, passenger_fname, passenger_billing_address, passenger_email) 
-VALUES ('Butt', 'Abu','160 Convent Ave, New York, NY 11103','buttabu@yahoo.com');
-
-INSERT INTO passengers(passenger_lname, passenger_fname, passenger_billing_address, passenger_email) 
-VALUES ('Batista', 'Nelson','160 Convent Ave, New York, NY 11102','nbatist000@citymail.cuny.edu');
-
-INSERT INTO passengers(passenger_lname, passenger_fname, passenger_billing_address, passenger_email) 
-VALUES ('Shomoye', 'Adedamola','160 Convent Ave, New York, NY 11103','ashomoy000@citymail.cuny.edu');
-
-INSERT INTO passengers(passenger_lname, passenger_fname, passenger_billing_address, passenger_email) 
-VALUES ('Palongengi', 'Ichwan','160 Convent Ave, New York, NY 11103','ipalong00@citymail.cuny.edu');
-
-INSERT INTO Tickets(trip_starts, trip_ends, trip_train, trip_date, passenger_id, round_trip, fare)
-VALUES (001, 002,1,'2017-04-10 06:55:55',(SELECT passenger_id from Passengers WHERE Passengers.passenger_id=1),1,20.134);
-
-INSERT INTO Tickets(trip_starts, trip_ends, trip_train, trip_date, passenger_id, round_trip, fare)
-VALUES (002, 003,2,'2017-04-10 06:58:58',(SELECT passenger_id from Passengers WHERE Passengers.passenger_id=2),0,10.134);
-
-INSERT INTO Tickets(trip_starts, trip_ends, trip_train, trip_date, passenger_id, round_trip, fare)
-VALUES (003, 004,3,'2017-04-10 07:00:00',(SELECT passenger_id from Passengers WHERE Passengers.passenger_id=3),1,202.34);
-
-
